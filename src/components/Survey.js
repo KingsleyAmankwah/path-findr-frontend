@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+import {
+  createSearchParams,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 
 function Survey() {
+  const navigate = useNavigate();
   const [responses, setResponses] = useState({
     question1: null,
     question2: null,
@@ -158,7 +164,7 @@ function Survey() {
     })
       .then((response) => {
         if (response.ok) {
-          return response.text(); // If the response is text, use response.text() instead of response.json()
+          return response.text();
         } else {
           throw new Error(
             `Failed to submit survey. Status: ${response.status}`
@@ -166,7 +172,9 @@ function Survey() {
         }
       })
       .then((data) => {
-        console.log("Server response:", data);
+        console.log("Server responsed:", data);
+
+        navigate(`/after-survey?data=${data}`);
       })
       .catch((error) => {
         console.error(error);
@@ -174,28 +182,36 @@ function Survey() {
   };
 
   return (
-    <div>
-      <h1>Survey</h1>
+    <div className="mx-auto max-w-screen-lg p-4">
+      <h1 className="text-2xl font-bold mb-4">Survey</h1>
       <form>
         {questions.map((question, index) => (
-          <div key={index}>
-            <p>{question.question}</p>
-            {question.options.map((option, optionIndex) => (
-              <div key={optionIndex}>
-                <input
-                  type="radio"
-                  name={`question${index}`}
-                  value={optionIndex}
-                  checked={responses[`question${index}`] === optionIndex}
-                  onChange={() => handleResponse(index, optionIndex)}
-                />
-                <label>{option}</label>
-              </div>
-            ))}
+          <div key={index} className="mb-4">
+            <p className="font-semibold">{question.question}</p>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {question.options.map((option, optionIndex) => (
+                <div
+                  key={optionIndex}
+                  onClick={() => handleResponse(index, optionIndex)}
+                  className={`border p-4 cursor-pointer rounded-lg ${
+                    responses[`question${index}`] === optionIndex
+                      ? "bg-blue-200"
+                      : "bg-white"
+                  }`}
+                >
+                  <label>{option}</label>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </form>
-      <button onClick={submitSurvey}>Submit Survey</button>
+      <button
+        className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 hover:bg-blue-700 transition-colors"
+        onClick={submitSurvey}
+      >
+        Submit Survey
+      </button>
     </div>
   );
 }
