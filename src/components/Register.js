@@ -5,7 +5,6 @@ import Spinner from './Spinner';
 
 function SignUp() {
   //login render
-  const [isLogin, setIsLogin] = useState(false);
 
   //
   const [username, setUsername] = useState('');
@@ -13,10 +12,6 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const toggleLogin = () => {
-    setIsLogin(!isLogin);
-   
-  };
 
   //handle submit button
   const handleClick = async (e) => {
@@ -38,7 +33,7 @@ function SignUp() {
       body: JSON.stringify(Student)
     });
     const data = await response.text();
-   if(response.status == 200){
+   if(response.status === 200){
     toast.success(`${data}`);
     console.log(`Response from server: ${data}`);
    }else{
