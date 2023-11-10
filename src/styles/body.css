@@ -4163,25 +4163,7 @@ body {
     text-align: left;
   }
   
-  /* .steps-wrap {
-    display: block;
-    width: 940px;
-  }
-  
-  .steps-wrap.w50-80 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 60%;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  } */
+
   
   .content2-number-wrapper {
     width: 80%;
@@ -4222,30 +4204,6 @@ body {
     margin-bottom: 40px;
   }
   
-  /* .form-block {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 64px 56px 40px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 5px 55px 12px #e4e8ea;
-    text-align: center;
-  } */
   
   .upperheading-smaller-2 {
     color: #3e3f3f;
@@ -8212,13 +8170,7 @@ body {
       font-weight: 600;
     }
   
-    /* .steps-wrap {
-      width: 645px;
-    }
-  
-    .steps-wrap.w50-80 {
-      padding-left: 0%;
-    } */
+ 
   
     .content2-number-wrapper {
       display: block;
@@ -8726,17 +8678,16 @@ body {
       margin-right: auto;
       margin-left: auto;
     }
-    /* CSS for the mobile menu */
+
 #mobile-menu {
   display: none;
   position: absolute;
-  top: 60px; /* Adjust the top position as needed */
+  top: 60px; 
   right: 0;
-  background-color: #fff; /* Adjust the background color as needed */
+  background-color: #fff; 
   padding: 10px;
 }
 
-/* CSS to show the mobile menu when the button is clicked */
 #mobile-menu.active {
   display: block;
 }
@@ -8752,17 +8703,16 @@ body {
       font-weight: 600;
       text-transform: uppercase;
     }
-  /* CSS for the mobile menu */
+
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 60px; /* Adjust the top position as needed */
+  top: 60px; 
   right: 0;
-  background-color: #fff; /* Adjust the background color as needed */
+  background-color: #fff; 
   padding: 10px;
 }
 
-/* CSS to show the mobile menu when the button is clicked */
 .mobile-menu.active {
   display: block;
 }
@@ -9181,21 +9131,12 @@ body {
       width: 100%;
     }
   
-    /* .steps-wrap {
-      width: 100%;
-      padding-right: 20px;
-      padding-left: 20px;
-    } */
+
   
     .content2-number-wrapper {
       width: 100%;
     }
   
-    /* .form-block {
-      padding-top: 32px;
-      padding-right: 32px;
-      padding-left: 32px;
-    } */
   
     .upperheading-smaller-2 {
       font-size: 2.8vw;
@@ -10279,12 +10220,6 @@ body {
       text-align: left;
     }
   
-    /* .steps-wrap.w50-80 {
-      width: 100%;
-      padding-top: 0px;
-      padding-right: 0px;
-      padding-left: 0px;
-    } */
   
     .content2-number-wrapper {
       display: -webkit-box;
@@ -10310,11 +10245,7 @@ body {
       margin-bottom: 0px;
     }
   
-    /* .form-block {
-      width: 90%;
-      padding: 24px 24px 30px;
-    } */
-  
+ 
     .upperheading-smaller-2 {
       font-size: 4vw;
       line-height: 4vw;

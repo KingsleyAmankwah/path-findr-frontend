@@ -95,7 +95,7 @@
   code, kbd, pre, samp {
     font-family: monospace;
     font-size: 1em;
-  } */
+  } 
   
   button, input, optgroup, select, textarea {
     color: inherit;
@@ -268,17 +268,6 @@
     display: none;
   }
   
-  /* .w-button {
-    color: #fff;
-    line-height: inherit;
-    cursor: pointer;
-    background-color: #3898ec;
-    border: 0;
-    border-radius: 0;
-    padding: 9px 15px;
-    text-decoration: none;
-    display: inline-block;
-  } */
   
   
   
@@ -478,12 +467,7 @@
     padding: 0;
   }
   
-  /* button, [type="button"], [type="reset"] {
-    cursor: pointer;
-    -webkit-appearance: button;
-    border: 0;
-  } */
-  
+
   .w-form {
     margin: 0 0 15px;
   }
@@ -502,11 +486,6 @@
     display: none;
   }
   
-  /* label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    display: block;
-  } */
   
   .w-input, .w-select {
     width: 100%;
@@ -548,9 +527,7 @@
     background-color: #eee;
   }
   
-  /* textarea.w-input, textarea.w-select {
-    height: auto;
-  } */
+
   
   .w-select {
     background-color: #f3f3f3;
