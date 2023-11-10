@@ -5,14 +5,7 @@ const PersonalityComponent = () => {
   return (
     <div className="meet-team-member-right">
       <div>
-        <div
-          className="_80-width-header"
-          style={{ marginTop: 20, marginLeft: 65 }}
-        ></div>
-        <p
-          className="gibson-paragraph"
-          style={{ marginTop: 20, marginLeft: 65 }}
-        ></p>
+        <h1>Your Top Recommended Fields</h1>
       </div>
     </div>
   );
