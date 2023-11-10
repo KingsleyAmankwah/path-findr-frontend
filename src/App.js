@@ -7,7 +7,7 @@ import Login from "./Pages/Login.jsx";
 import Register from "./Pages/Register.jsx";
 import Mentor from "./Pages/Mentor.jsx";
 import AfterSurvey from "./Pages/AfterSurvey.jsx";
-import Survey from "./Pages/Survey.jsx";
+import Survey from "./components/Survey.js";
 import ChatApp from "./Pages/ChatApp.jsx";
 
 function App() {
