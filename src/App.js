@@ -14,14 +14,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} /> {/* Route for the root path */}
-        {/* <Route path="/Home" element={<Home />} /> */}
-        {/* <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/mentor" element={<Mentor />} />
         <Route path="/survey" element={<Survey />} />
         <Route path="/after-survey" element={<AfterSurvey />} />
-        <Route path='/chat-mentor' element={<ChatApp />} /> */}
+        <Route path="/chat-mentor" element={<ChatApp />} />
       </Routes>
       <ToastContainer />
     </Router>
