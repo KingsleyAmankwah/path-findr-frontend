@@ -1,7 +1,6 @@
 import React from "react";
 import PersonalityComponent from "../components/MyPersonality";
 import MentorFind from "../components/MentorFind";
-import Navbar from "../components/Navbar";
 
 const containerStyle = {
   display: "flex",
