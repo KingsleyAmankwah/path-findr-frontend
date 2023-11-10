@@ -5,7 +5,7 @@ const PersonalityComponent = () => {
   return (
     <div className="meet-team-member-right">
       <div>
-        <h1>Your Top Recommended Field is</h1>
+        <h1>Your Top Recommended Field</h1>
       </div>
 
       <div className="card">

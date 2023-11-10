@@ -15,7 +15,7 @@ const componentStyle = {
 const AfterSurvey = () => {
   return (
     <div>
-      <div style={containerStyle}>
+      <div style={containerStyle} className="grid grid-cols-1 md:grid-cols-2">
         <div style={componentStyle}>
           <PersonalityComponent />
         </div>
