@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Home from './Pages/Home.jsx';
-import Login from './Pages/Login.jsx';
-import Register from './Pages/Register.jsx';
-import Mentor from './Pages/Mentor.jsx';
-import AfterSurvey from './Pages/AfterSurvey.jsx';
-import Survey from './Pages/Survey.jsx';
-import ChatApp from './Pages/ChatApp.jsx';
+import Home from "./Pages/Home.jsx";
+import Login from "./Pages/Login.jsx";
+import Register from "./Pages/Register.jsx";
+import Mentor from "./Pages/Mentor.jsx";
+import AfterSurvey from "./Pages/AfterSurvey.jsx";
+import Survey from "./Pages/Survey.jsx";
+import ChatApp from "./Pages/ChatApp.jsx";
 
 function App() {
   return (
